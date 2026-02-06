@@ -9,4 +9,4 @@ const asynchandeler =(fn)=>async(req,res,next)=>{
     }
 
 }
-export default asynchandeler
+export  {asynchandeler}
