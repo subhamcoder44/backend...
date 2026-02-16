@@ -70,6 +70,7 @@ if(user){
     if(!isPasswordValid){
         throw new ApiError(401,"invalid password")
     }
+    
     const accessToken= user.generateAccessToken();
     const refreshToken= user.refresAccessToken();
     return res.status(200).json(
