@@ -5,7 +5,10 @@ const asynchandeler =(fn)=>async(req,res,next)=>{
         res.status(error.statuscode||500).json({
             success:false,
             message:error.message
+
+            
         })
     }
+
 }
 export {asynchandeler}
